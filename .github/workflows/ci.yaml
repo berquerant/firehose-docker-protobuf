@@ -1,0 +1,23 @@
+name: CI
+
+permissions: read-all
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  env:
+    IMAGE_NAME: firehose-docker-protobuf
+    IMAGE_TAG: 1
+  test:
+    timeout-minutes: 1
+    runs-on: ubuntu-latest
+    environment:
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: bin/build.sh
