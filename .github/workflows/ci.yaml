@@ -12,7 +12,7 @@ jobs:
   build:
     timeout-minutes: 1
     runs-on: ubuntu-latest
-    environment:
+    env:
       IMAGE_NAME: firehose-docker-protobuf
       IMAGE_TAG: "0.1.0"
     steps:
