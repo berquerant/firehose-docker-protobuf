@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    timeout-minutes: 1
+    timeout-minutes: 3
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: firehose-docker-protobuf
