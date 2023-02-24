@@ -9,6 +9,7 @@ import (
 	"strconv"
 
 	"github.com/berquerant/firehose-docker-protobuf/test/pb"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
