@@ -2,7 +2,7 @@
 
 proto_path="$PROTO_PATH"
 
-docker_image="${IMAGE_NAME:-firehose-docker-protobuf}:${IMAGE_TAG:-0.1.0}"
+docker_image="${IMAGE_NAME:-firehose-docker-protobuf}:${IMAGE_TAG:-0.1.1}"
 proto_root_path=${PROTO_ROOT:-$PWD}
 go_out_relpath=${GO_OUT:-.}
 grpc_out_relpath=${GRPC_OUT:-$go_out_relpath}
