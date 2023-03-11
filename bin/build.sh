@@ -1,3 +1,9 @@
 #!/bin/bash
 
-docker build . --tag "${IMAGE_NAME:-firehose-docker-protobuf}:${IMAGE_TAG:-0.1.1}"
+image_version="0.2.0"
+image_name="firehose-docker-protobuf"
+image_tag="${image_name}:${image_version}"
+latest_image_tag="${image_name}:latest"
+
+docker build . --tag "$image_tag"
+docker tag "$image_tag" "$latest_image_tag"

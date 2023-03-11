@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     wget --version && \
     unzip -v
 
-RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v22.0/protoc-22.0-linux-x86_64.zip -O protoc.zip && \
+# https://github.com/protocolbuffers/protobuf/releases
+RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v22.2/protoc-22.2-linux-x86_64.zip -O protoc.zip && \
     unzip protoc.zip && \
     ln -snvf /protoc/bin/protoc /usr/bin/protoc && \
     protoc --version
