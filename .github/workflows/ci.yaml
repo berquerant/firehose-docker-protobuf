@@ -19,7 +19,7 @@ jobs:
           - "1.20"
     env:
       IMAGE_NAME: firehose-docker-protobuf
-      IMAGE_TAG: "0.1.0"
+      IMAGE_TAG: "0.1.1"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
