@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 golang:1.20.5-bullseye
+FROM --platform=linux/amd64 golang:1.20.6-bullseye
 
 WORKDIR /protoc
 
